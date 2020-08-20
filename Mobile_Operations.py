@@ -29,7 +29,7 @@ def sendSMS(numbers='',message=''):
     if numbers=='' and message=='':
         Thread(target=say,args=('please enter the mobile number of Receiver ',)).start()
         numbers = input(">>>> Enter the  ||MOBILE|| Number of Receiver --:: ")
-        say('please tell me what is your message would you like to send to receiver')
+        say('please tell what is your message would you like to send to receiver')
         message = getText()
         print('>> Message ',message)
     try:
